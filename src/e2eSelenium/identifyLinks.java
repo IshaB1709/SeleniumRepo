@@ -24,7 +24,7 @@ public class identifyLinks {
 		System.out.println(driver.findElements(By.xpath("//a")).size());// using xpath-a refers to anchor and everylink
 																		// will have "a" as tagname
 		System.out.println(driver.findElements(By.cssSelector("a")).size());// using cssSelector
-//***** Counting links on a Particular section***********************************************//
+//***** Counting links on a 	Particular section***********************************************//
 		WebElement footerSection = driver.findElement(By.id("gf-BIG"));
 		System.out.println(footerSection.findElements(By.tagName("a")).size());
 		System.out.println(driver.findElements(By.xpath(("//div[@id='gf-BIG']//a"))).size());
